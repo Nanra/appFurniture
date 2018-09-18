@@ -1,9 +1,10 @@
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { HttpClientModule } from '@angular/common/http';
 import { FurnitureService } from './shared/service/furniture.service';
 import { CategoryService } from './shared/service/category.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,7 +34,8 @@ import { ShortenPipe } from './shared/pipe/shorten.pipe';
     BrowserModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    AngularFontAwesomeModule
   ],
   providers: [CategoryService, FurnitureService],
   bootstrap: [AppComponent]
