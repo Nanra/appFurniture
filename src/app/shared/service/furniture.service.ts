@@ -13,9 +13,9 @@ export class FurnitureService {
     constructor(private http: HttpClient) {}
 
     loadFurniture(cat_id: string) {
-        return this.http.get('/api/category/' + cat_id + '/furniture')
+        return this.http.get('http://localhost:3000/api/category' + cat_id + '/furniture')
             .pipe(map((respone: any) => {
-                    const data = respone.json();
+                    const data = respone;
                     for (let elem of data) {
                         elem.images = elem.images.split(',');
                     }
@@ -32,7 +32,7 @@ export class FurnitureService {
 
     getFurniture(it_id) {
         const result = this.furnitureList.find((elem) => {
-            return (elem.it_id == it_id);
+            return (elem.it_id === it_id);
         });
 
         return result;

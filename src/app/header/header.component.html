@@ -1,9 +1,10 @@
-<nav class="navbar navbar-expand-md navbar-light bg-success fixed-top">
-  <a class="navbar-brand" routerLink="/home"><img src="assets/img/logo02.jpg" alt="company logo" style="max-height: 50px" /> Room of Woods</a>
+<nav class="navbar navbar-expand-md navbar-light bg-primary fixed-top">
+  <a class="navbar-brand" routerLink="/home"><img src="../../assets/img/logo.png" alt="company logo" style="max-height: 50px" /> Room of Woods</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
     aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
@@ -24,7 +25,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"> Search</button>
     </form>
   </div>
 </nav>

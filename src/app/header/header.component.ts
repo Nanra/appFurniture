@@ -2,6 +2,7 @@ import { CategoryService } from './../shared/service/category.service';
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../shared/model/category.model';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',

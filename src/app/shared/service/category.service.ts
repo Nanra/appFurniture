@@ -15,9 +15,9 @@ export class CategoryService {
     constructor(private http: HttpClient) { }
 
     loadCategories() {
-        return this.http.get('/api/category')
-            .pipe(map((respone: Response) => {
-                    const data = respone.json();
+        return this.http.get('http://localhost:3000/api/category')
+            .pipe(map((respone: any) => {
+                    const data = respone;
                     this.categoryList = data;
                     return data;
                 },

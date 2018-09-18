@@ -1,11 +1,13 @@
+import { HttpClientModule } from '@angular/common/http';
 import { FurnitureService } from './shared/service/furniture.service';
 import { CategoryService } from './shared/service/category.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { CollectionComponent } from './collection/collection.component';
@@ -30,7 +32,8 @@ import { ShortenPipe } from './shared/pipe/shorten.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    HttpClientModule
   ],
   providers: [CategoryService, FurnitureService],
   bootstrap: [AppComponent]
